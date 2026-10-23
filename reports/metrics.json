@@ -1,0 +1,71 @@
+{
+  "test_set_comparison": {
+    "Baseline (majority class)": {
+      "accuracy": 0.7342,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "confusion_matrix": {
+        "tn": 1033,
+        "fp": 0,
+        "fn": 374,
+        "tp": 0
+      }
+    },
+    "Logistic Regression": {
+      "accuracy": 0.7235,
+      "precision": 0.4876,
+      "recall": 0.7914,
+      "f1": 0.6035,
+      "roc_auc": 0.8344,
+      "confusion_matrix": {
+        "tn": 722,
+        "fp": 311,
+        "fn": 78,
+        "tp": 296
+      }
+    },
+    "XGBoost (tuned)": {
+      "accuracy": 0.7647,
+      "precision": 0.5417,
+      "recall": 0.746,
+      "f1": 0.6277,
+      "roc_auc": 0.8403,
+      "confusion_matrix": {
+        "tn": 797,
+        "fp": 236,
+        "fn": 95,
+        "tp": 279
+      }
+    }
+  },
+  "selected": {
+    "model": "XGBoost (tuned)",
+    "trained_with": {
+      "scikit-learn": "1.9.1",
+      "xgboost": "3.4.1",
+      "pandas": "3.0.5",
+      "numpy": "2.5.3"
+    },
+    "threshold": 0.58,
+    "n_train": 5625,
+    "n_test": 1407,
+    "churn_rate": 0.2658,
+    "cv_roc_auc": 0.8512,
+    "train_roc_auc": 0.8632,
+    "test_metrics": {
+      "accuracy": 0.7647,
+      "precision": 0.5417,
+      "recall": 0.746,
+      "f1": 0.6277,
+      "roc_auc": 0.8403,
+      "confusion_matrix": {
+        "tn": 797,
+        "fp": 236,
+        "fn": 95,
+        "tp": 279
+      }
+    }
+  }
+}
